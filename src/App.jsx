@@ -1,20 +1,21 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar.jsx";
 import Landing from "./components/Landing.jsx";
 import Projects from "./components/Projects.jsx";
 import Contact from "./components/Contact.jsx";
 
-function App() {
+const App = () => {
   return (
-    <Router>
+    <>
+    <h1>HELLLOOOOOOOO</h1>
       <Navbar />
-      <Switch>
-        <Route path="/" exact component={Landing} />
-        <Route path="/projects" component={Projects} />
-        <Route path="/contact" component={Contact} />
-      </Switch>
-    </Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/projects" element={<Projects />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </>
   );
 }
 

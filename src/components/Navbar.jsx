@@ -1,13 +1,19 @@
 import React from "react";
-import "./stylesheets/Navbar.css";
+import "../assets/stylesheets/Contact.css";
 
-function Navbar() {
+const Navbar = () => {
   return (
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Projects</li>
-        <li>Contact</li>
+        <li>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          <a href="/projects">Projects</a>
+        </li>
+        <li>
+          <a href="/contact">Contact</a>
+        </li>
       </ul>
     </nav>
   );
