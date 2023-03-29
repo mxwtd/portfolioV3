@@ -19,6 +19,9 @@ const Landing = () => {
         <h1 className="text-blue-500 ">➜  <span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>) <span className="text-yellow-500">✗</span> <span className="text-white text-xl">Full Stack Web Dev_</span></h1>
         <h1 className="text-blue-500 bottom-h1">➜  <span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>) <span className="text-yellow-500">✗</span><span className="blinking-bar text-1xl text-white font-black">  |  </span></h1>
       </div>
+      <div className="mockup-code bg-primary text-primary-content max-w-xs">
+        <pre><code>Hello World!</code></pre>
+      </div>
     </div>
   );
 };

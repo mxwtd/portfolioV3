@@ -82,6 +82,10 @@ h2 {
   padding-bottom: 30%;
 }
 
+.mockup-code {
+  float: right;
+}
+
 /* ///////// Blinking Cursor ////////// */
 
 .blinking-bar {

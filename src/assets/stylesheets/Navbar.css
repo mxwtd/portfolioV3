@@ -1,26 +1,4 @@
-/* nav {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  padding: 2rem;
-}
-
-nav ul {
-  display: flex;
-  gap: 1rem;
-  list-style: none;
-}
-
-nav ul li a {
-  color: #d1d1d1;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-nav ul li a:hover {
-  text-decoration: underline;
-} */
-
+/* ////////// NAV BAR ////////// */
 
 nav {
   display: flex;
@@ -50,7 +28,7 @@ nav {
   position: absolute;
   top: 5rem;
   right: 2rem;
-  background-color: #fff;
+  background-color: #4c4c4c;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   padding: 1rem;
   z-index: 1;
