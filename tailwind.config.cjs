@@ -4,10 +4,14 @@ module.exports = {
   theme: {
     extend: {},
     maxHeight: {
-      'custom': '65vh',
+      'custom': '75vh',
     },
-    paddingTop: {
-      'custom': '5rem',
+    height: {
+      'custom': '68vh',
+    },
+    width: {
+      'custom': '12vw',
+    }
   },
-  plugins: [require("daisyui")],
+  plugins: [require("daisyui"), require('@tailwindcss/aspect-ratio')],
 }

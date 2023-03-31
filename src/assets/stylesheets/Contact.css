@@ -1,4 +1,10 @@
-h1 {
-  font-size: 2rem;
-  margin: 2rem 0;
+.mac-window-3 {
+  position: absolute;
+  top: 40%;
+  left: 15%;
+  width: 50%;
+  background-color: #0c2063df;
+  border-radius: 1rem;
+  padding: 2rem;
+  z-index: 5;
 }
