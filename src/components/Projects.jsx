@@ -1,11 +1,15 @@
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import '/Users/maxwtd/Desktop/PortfolioV3/src/assets/stylesheets/Projects.css';
+import ProjectDetails from '/Users/maxwtd/Desktop/PortfolioV3/src/components/ProjectDetails.jsx';
 
 const Projects = () => {
   const carouselRef = useRef(null);
   const scrollerMasterRef = useRef(null);
   const sensitivityFactor = 40;
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [showProjectDetails, setShowProjectDetails] = useState(false);
 
+  // /////// CAROUSEL SCROLL /////////
   useEffect(() => {
     const carouselElement = carouselRef.current;
     const scrollerMasterElement = scrollerMasterRef.current;
@@ -45,15 +49,8 @@ const Projects = () => {
     };
   }, []);
 
-  setTimeout(function() {
-    document.getElementById("scroll-p").style.display = "block";
-    document.getElementById("scroll-p").style.opacity = 0;
+  // /////// SCROLL WHEEL FADE IN /////////
 
-    setTimeout(function() {
-      document.getElementById("scroll-p").style.transition = "opacity 3s ease-in";
-      document.getElementById("scroll-p").style.opacity = 1;
-    }, 10);
-  }, 1000);
   setTimeout(function() {
     document.querySelector(".scroller-wheel").style.display = "block";
     document.querySelector(".scroller-wheel").style.opacity = 0;
@@ -63,6 +60,13 @@ const Projects = () => {
       document.querySelector(".scroller-wheel").style.opacity = 1;
     }, 10);
   }, 500);
+
+  // /////// Project Info Conditional /////////
+
+  const handleViewClick = (project) => {
+    setSelectedProject(project);
+    setShowProjectDetails(true);
+  };
 
   return (
     <div className="container-projects">
@@ -78,8 +82,17 @@ const Projects = () => {
         </div>
         <p className="mac-window-header-title-projects text-gray-300">~/Desktop/PortfolioV3/Projects</p>
       </div>
-      <div ref={carouselRef} className="carousel carousel-center h-custom p-4 space-x-12 bg-stone-600/20 rounded-box mt-9 py-10 px-14">
-        <div className="carousel-item">
+      {showProjectDetails && (
+        <div className="mockup-code mockup-code-4 mt-8 bg-stone-500 min-h-full">
+          <ProjectDetails
+            project={selectedProject}
+            onClose={() => setShowProjectDetails(false)}
+          />
+        </div>
+      )}
+      {!showProjectDetails && (
+        <div ref={carouselRef} className="carousel carousel-center h-custom p-4 space-x-12 bg-stone-600/20 rounded-box mt-9 py-10 px-14">
+        <div className="carousel-item shadow-custom">
           <div className="indicator">
             <div class="indicator-item indicator-middle indicator-center badge badge-primary mt-6 p-4 text-lg font-bold">
               <div ref={scrollerMasterRef} className='scroller-master'>
@@ -94,21 +107,35 @@ const Projects = () => {
             <div style={{width:"75vw"}} className="carousel-intro-div rounded-box bg-stone-800"></div>
           </div>
         </div>
-        <div className="carousel-item">
-          <div className="indicator">
-            <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Finlit</span>
-            <a href="/"><span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span></a>
-            <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680082834/Finlit_showreel_b23klk.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
-          </div>
+        <div className="carousel-item shadow-custom">
+        <div className="indicator">
+          <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Finlit</span>
+          <a
+            onClick={(e) => {
+              e.preventDefault();
+              handleViewClick('Finlit');
+            }}
+          >
+            <span className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
+          </a>
+          <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680082834/Finlit_showreel_b23klk.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
         </div>
-        <div className="carousel-item">
+      </div>
+        <div className="carousel-item shadow-custom">
           <div className="indicator">
             <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Tumbuka</span>
-            <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                handleViewClick('Tumbuka');
+              }}
+            >
+              <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
+            </a>
             <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680075752/Tumbuka_showreel_uvw7cm.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
           </div>
         </div>
-        <div className="carousel-item">
+        <div className="carousel-item shadow-custom">
           <div className="indicator">
             <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Tumbuka</span>
             <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
@@ -116,6 +143,7 @@ const Projects = () => {
           </div>
         </div>
       </div>
+      )}
     </div>
   );
 };

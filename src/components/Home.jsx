@@ -14,11 +14,10 @@ const Landing = () => {
     <div className="container">
       <div className="projects-title">
         <h1 className="text-white text-4xl mt-6 ml-10">Portfolio<span className="text-yellow-500">()</span>;</h1>
-        {/* <p className="text-white text-2xl mt-2">console.log<span className="text-blue-500">(</span>projects<span className="text-yellow-500">()</span><span className="text-blue-500">)</span>;</p> */}
       </div>
       {/* //////// MAC-WINDOW-TERMINAL ////////*/}
       <Draggable handle=".mac-window-header" bounds="parent">
-        <div className="mac-window cursor-grab" onClick={() => handleWindowClick('mac-window')}
+        <div className="mac-window cursor-grab shadow-custom" onClick={() => handleWindowClick('mac-window')}
           style={{
             zIndex: activeWindow === 'mac-window' ? 6 : 0,
           }}>
@@ -42,7 +41,7 @@ const Landing = () => {
       {/* //////////////////////////////////////// */}
       {/* //////// MAC-WINDOW-LANGUAGES ////////*/}
       <Draggable>
-        <div className="mac-window-2 cursor-grab" onClick={() => handleWindowClick('mac-window-2')}
+        <div className="mac-window-2 cursor-grab shadow-custom" onClick={() => handleWindowClick('mac-window-2')}
           style={{
             zIndex: activeWindow === 'mac-window-2' ? 6 : 0,
           }}>
@@ -58,7 +57,7 @@ const Landing = () => {
             <div className='leading-tight pt-2'>
               ├── src/<br></br>
               │   ├── <a href='/projects'><span className='text-xl font-bold text-white hover:text-gray-400'>Projects ↘</span></a><br></br>
-              │   └── <a href='/Contact'><span className='text-xl font-bold text-white hover:text-gray-400'>Contact ↘</span></a><br></br>
+              │   └── <a href='/About'><span className='text-xl font-bold text-white hover:text-gray-400'>About ↘</span></a><br></br>
               └── <a><span className='text-xl font-bold text-white hover:text-gray-400'>GitHub ↘</span></a><br></br>
             </div>
         </div>
@@ -68,7 +67,7 @@ const Landing = () => {
       {/* //////// MAC-WINDOW-PURPLE ////////*/}
       <Draggable>
         <div className="mockup-code-1-master">
-          <div className="mockup-code bg-primary text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-1" onClick={() => handleWindowClick('mockup-code')}
+          <div className="mockup-code bg-primary text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-1 shadow-custom" onClick={() => handleWindowClick('mockup-code')}
             style={{
               zIndex: activeWindow === 'mockup-code' ? 6 : 0,
             }}>
@@ -86,7 +85,7 @@ const Landing = () => {
       {/* //////// MAC-WINDOW-YELLOW ////////*/}
       <Draggable>
         <div className="mockup-code-2-master">
-          <div className="mockup-code bg-yellow-500 text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-2" onClick={() => handleWindowClick('mockup-code-2')}
+          <div className="mockup-code bg-yellow-500 text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-2 shadow-custom" onClick={() => handleWindowClick('mockup-code-2')}
             style={{
               zIndex: activeWindow === 'mockup-code' ? 6 : 0,
             }}>

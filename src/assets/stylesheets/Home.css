@@ -12,10 +12,12 @@ h2 {
   font-weight: 700;
 }
 
+/* ///////// Windows ////////// */
+
 .mac-window {
   position: relative;
   width: 60%;
-  background-color: #323232ec;
+  background-color: #323232cb;
   border-radius: 1rem;
   padding: 2rem;
   top: 5%;
@@ -121,6 +123,7 @@ h2 {
   }
 }
 
+/* ///////// Cursor ////////// */
 
 .cursor-grab:active {
   cursor: grabbing;
