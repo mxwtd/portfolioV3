@@ -108,19 +108,26 @@ const Projects = () => {
           </div>
         </div>
         <div className="carousel-item shadow-custom">
-        <div className="indicator">
-          <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Finlit</span>
-          <a
-            onClick={(e) => {
-              e.preventDefault();
-              handleViewClick('Finlit');
-            }}
-          >
-            <span className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
-          </a>
-          <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680082834/Finlit_showreel_b23klk.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
+          <div className="indicator">
+            <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Finlit</span>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                handleViewClick('Finlit');
+              }}
+            >
+              <span className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
+            </a>
+            <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680082834/Finlit_showreel_b23klk.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
+          </div>
         </div>
-      </div>
+        <div className="carousel-item shadow-custom">
+          <div className="indicator">
+            <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Friendify</span>
+            <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
+            <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680464001/Friendify_showreel_hemzxd.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
+          </div>
+        </div>
         <div className="carousel-item shadow-custom">
           <div className="indicator">
             <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Tumbuka</span>
@@ -132,13 +139,6 @@ const Projects = () => {
             >
               <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
             </a>
-            <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680075752/Tumbuka_showreel_uvw7cm.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
-          </div>
-        </div>
-        <div className="carousel-item shadow-custom">
-          <div className="indicator">
-            <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Tumbuka</span>
-            <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
             <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680075752/Tumbuka_showreel_uvw7cm.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
           </div>
         </div>
