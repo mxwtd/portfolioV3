@@ -140,3 +140,26 @@
 #scroll-p, .scroller-wheel {
   display: none;
 }
+
+@media screen and (max-width: 768px) {
+
+  .container-projects {
+    max-width: 95%;
+  }
+
+  .carousel {
+    max-width: 100%;
+  }
+
+  .carousel-item {
+    max-width: 100%;
+  }
+
+  .carousel-intro-div {
+    display: none;
+  }
+
+  .scroll-indicator, .scroller-wheel {
+    display: none !important;
+  }
+}

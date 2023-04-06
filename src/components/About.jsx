@@ -3,11 +3,13 @@ import Draggable from "react-draggable";
 import "/Users/maxwtd/Desktop/PortfolioV3/src/assets/stylesheets/About.css"
 
 const About = () => {
+
   const [activeWindow, setActiveWindow] = useState('');
 
   const handleWindowClick = (windowName) => {
     setActiveWindow(windowName);
   };
+  
   return (
     <div className="container">
       <div className="projects-title">
@@ -17,12 +19,12 @@ const About = () => {
       {/* //////// MAC-WINDOW-YELLOW ////////*/}
         <Draggable>
           <div className="mockup-code-3-master">
-            <div className="mockup-code bg-yellow-500 w-full text-primary-content cursor-grab select-none mockup-code-3" onClick={() => handleWindowClick('mockup-code-3')}
+            <div className="mockup-code bg-yellow-500 w-full text-primary-content cursor-grab select-none mockup-code-3 shadow-custom" onClick={() => handleWindowClick('mockup-code-3')}
               style={{
                 zIndex: activeWindow === 'mockup-code-3' ? 6 : 0,
               }}>
               <div className="flex flex-col items-center gap-4 px-5">
-                <div className='w-custom2'>
+                <div className='max-w-[40%]'>
                   <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="scale-95 rounded-full bg-stone-700"/>
                 </div>
                 <p className='text-stone-700 font-extrabold bg-slate-200/75 p-3 rounded-box'>
@@ -37,7 +39,7 @@ const About = () => {
         {/* //////////////////////////////////////// */}
         {/* //////// MAC-WINDOW-TERMINAL ////////*/}
         <Draggable>
-          <div className="mac-window-3 cursor-grab bg-stone-700/75" onClick={() => handleWindowClick('mac-window-3')}
+          <div className="mac-window-3 cursor-grab bg-stone-700/75 rounded-box shadow-custom" onClick={() => handleWindowClick('mac-window-3')}
             style={{
               zIndex: activeWindow === 'mac-window-3' ? 6 : 0,
             }}>
@@ -76,7 +78,7 @@ const About = () => {
         {/* //////// MAC-WINDOW-GREY ////////*/}
         <Draggable>
           <div className="mockup-code-5-master">
-            <div className="mockup-code bg-stone-700/75 w-full text-primary-content cursor-grab select-none mockup-code-5" onClick={() => handleWindowClick('mockup-code-5')}
+            <div className="mockup-code bg-stone-700/75 w-full text-primary-content cursor-grab select-none mockup-code-5 shadow-custom" onClick={() => handleWindowClick('mockup-code-5')}
               style={{
                 zIndex: activeWindow === 'mockup-code-5' ? 6 : 0,
               }}>

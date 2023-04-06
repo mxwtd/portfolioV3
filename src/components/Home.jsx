@@ -15,6 +15,46 @@ const Landing = () => {
       <div className="projects-title">
         <h1 className="text-white text-4xl mt-6 ml-10">Portfolio<span className="text-yellow-500">()</span>;</h1>
       </div>
+      <div className='all-windows-master'>
+        <div className='mockup-flex-master'>
+        {/* //////////////////////////////////////// */}
+        {/* //////// MAC-WINDOW-PURPLE ////////*/}
+          <Draggable>
+            <div className="mockup-code-1-master">
+              <div className="mockup-code bg-primary text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-1 shadow-custom" onClick={() => handleWindowClick('mockup-code')}
+                style={{
+                  zIndex: activeWindow === 'mockup-code' ? 6 : 0,
+                }}>
+                <div>
+                  <h1 className="mx-6"><h1>{">"}_ Drag Us!</h1></h1>
+                </div>
+                <div className='flex justify-center items-center'>
+                  <img src={myImage} alt="blob" className="drop-shadow-2xl user-select-none w-custom" />
+                </div>
+              </div>
+            </div>
+          </Draggable>
+          {/* //////// MAC-WINDOW-PURPLE END ////////*/}
+          {/* //////////////////////////////////////// */}
+          {/* //////// MAC-WINDOW-YELLOW ////////*/}
+          <Draggable>
+            <div className="mockup-code-2-master">
+              <div className="mockup-code bg-yellow-500 text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-2 shadow-custom" onClick={() => handleWindowClick('mockup-code-2')}
+                style={{
+                  zIndex: activeWindow === 'mockup-code' ? 6 : 0,
+                }}>
+                <div className="avatar flex justify-center items-center">
+                  <div className="w-custom rounded-full bg-stone-700">
+                    <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="mt-2 scale-95"/>
+                  </div>
+                </div>
+              </div>
+              </div>
+          </Draggable>
+          {/* //////// MAC-WINDOW-YELLOW END ////////*/}
+          {/* ////////////////////////////////////// */}
+        </div>
+      </div>
       {/* //////// MAC-WINDOW-TERMINAL ////////*/}
       <Draggable handle=".mac-window-header" bounds="parent">
         <div className="mac-window cursor-grab shadow-custom" onClick={() => handleWindowClick('mac-window')}
@@ -63,41 +103,6 @@ const Landing = () => {
         </div>
       </Draggable>
       {/* //////// MAC-WINDOW-LANGUAGES END ////////*/}
-      {/* //////////////////////////////////////// */}
-      {/* //////// MAC-WINDOW-PURPLE ////////*/}
-      <Draggable>
-        <div className="mockup-code-1-master">
-          <div className="mockup-code bg-primary text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-1 shadow-custom" onClick={() => handleWindowClick('mockup-code')}
-            style={{
-              zIndex: activeWindow === 'mockup-code' ? 6 : 0,
-            }}>
-            <div>
-              <h1 className="mx-6"><h1>{">"}_ Drag Us!</h1></h1>
-            </div>
-            <div className='flex justify-center items-center'>
-              <img src={myImage} alt="blob" className="drop-shadow-2xl user-select-none w-custom" />
-            </div>
-          </div>
-        </div>
-      </Draggable>
-      {/* //////// MAC-WINDOW-PURPLE END ////////*/}
-      {/* //////////////////////////////////////// */}
-      {/* //////// MAC-WINDOW-YELLOW ////////*/}
-      <Draggable>
-        <div className="mockup-code-2-master">
-          <div className="mockup-code bg-yellow-500 text-primary-content max-w-xs absolute top-12 right-10 mt-10 mr-5 cursor-grab select-none mockup-code-2 shadow-custom" onClick={() => handleWindowClick('mockup-code-2')}
-            style={{
-              zIndex: activeWindow === 'mockup-code' ? 6 : 0,
-            }}>
-            <div className="avatar flex justify-center items-center">
-              <div className="w-custom rounded-full bg-stone-700">
-                <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="mt-2 scale-95"/>
-              </div>
-            </div>
-          </div>
-          </div>
-      </Draggable>
-      {/* //////// MAC-WINDOW-YELLOW END ////////*/}
     </div>
   );
 };

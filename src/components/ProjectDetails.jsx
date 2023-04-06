@@ -21,6 +21,15 @@ const ProjectDetails = ({ project }) => {
       vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1680075752/Tumbuka_showreel_uvw7cm.mp4",
       site: "https://www.tumbuka-cafes.com/",
       github: "https://www.tumbuka-cafes.com/"
+    },
+    Friendify: {
+      title: 'Tumbuka',
+      description: 'An E-commerce app for a small coffee roastery.',
+      content: "Tumbuka is an e-commerce app for a small coffee roastery based in Southern France. The app allows users to browse the roastery's products, add them to their cart, and place orders. The app also features a dashboard that allows the roastery to manage their products and orders. The website ended up revoltionizing the roastery's business, allowing them to access a whole new market of users online.",
+      technologies: "Ruby, Rails, JS, HTML, CSS, SCSS, PostgreSQL, Heroku, Cloudinary API",
+      vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1680464001/Friendify_showreel_hemzxd.mp4",
+      site: "https://github.com/mxwtd/friendify",
+      github: "https://github.com/mxwtd/friendify"
     }
   };
 
@@ -41,7 +50,7 @@ const ProjectDetails = ({ project }) => {
       </div>
       <div className='project-info-card flex flex-row gap-10'>
         <video src={vid} style={{width:"60%"}} className="rounded-box object-cover h-custom3 shadow-custom" autoPlay loop muted />
-        <div className='project-info-card-text flex flex-col gap-5 min-h-custom2 h-custom3'>
+        <div className='project-info-card-text flex flex-col gap-6 min-h-custom2 h-custom3'>
           <div className="mockup-code bg-primary text-primary-content max-w-lg  shadow-custom">
             <div className='px-5'>
               <h1 >Technologies used:</h1>

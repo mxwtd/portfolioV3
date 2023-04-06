@@ -92,9 +92,9 @@ h2 {
 }
 
 .mockup-code-1-master {
-  position: absolute;
+  /* position: absolute;
   top: 39%;
-  left: 33%;
+  left: 33%; */
 }
 
 .mockup-code-2 {
@@ -102,9 +102,9 @@ h2 {
 }
 
 .mockup-code-2-master {
-  position: absolute;
+  /* position: absolute;
   top: 6%;
-  left: 33%;
+  left: 33%; */
 }
 
 /* ///////// Blinking Cursor ////////// */

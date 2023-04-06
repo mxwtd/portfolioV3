@@ -71,8 +71,8 @@ const Projects = () => {
   return (
     <div className="container-projects">
       <div className="projects-title">
-        <h1 className="text-white text-4xl mt-2">Projects</h1>
-        <p className="text-white text-2xl mt-2">console.log<span className="text-blue-500">(</span>projects<span className="text-yellow-500">()</span><span className="text-blue-500">)</span>;</p>
+        <h1 className="text-white text-4xl mt-5">Projects</h1>
+        <p className="text-white text-2xl mt-1">console.log<span className="text-blue-500">(</span>projects<span className="text-yellow-500">()</span><span className="text-blue-500">)</span>;</p>
       </div>
       <div className="mac-window-header-projects">
         <div className="mac-window-header-button-master-projects">
@@ -94,7 +94,7 @@ const Projects = () => {
         <div ref={carouselRef} className="carousel carousel-center h-custom p-4 space-x-12 bg-stone-600/20 rounded-box mt-9 py-10 px-14">
         <div className="carousel-item shadow-custom">
           <div className="indicator">
-            <div class="indicator-item indicator-middle indicator-center badge badge-primary mt-6 p-4 text-lg font-bold">
+            <div class="indicator-item indicator-middle indicator-center badge badge-primary mt-6 p-4 text-lg font-bold scroll-indicator">
               <div ref={scrollerMasterRef} className='scroller-master'>
                 <div class="scroller-wheel">
                   <a href="javascript:;" class="scroll-down mouse effect1">
@@ -124,7 +124,14 @@ const Projects = () => {
         <div className="carousel-item shadow-custom">
           <div className="indicator">
             <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Friendify</span>
-            <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
+            <a
+              onClick={(e) => {
+                e.preventDefault();
+                handleViewClick('Friendify');
+              }}
+            >
+              <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
+            </a>
             <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680464001/Friendify_showreel_hemzxd.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
           </div>
         </div>
