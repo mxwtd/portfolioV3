@@ -15,8 +15,8 @@ const Landing = () => {
       <div className="projects-title">
         <h1 className="text-white text-4xl mt-6 ml-10">Portfolio<span className="text-yellow-500">()</span>;</h1>
       </div>
-      <div className='all-windows-master flex flex-row w-full mt-5 h-custom4 max-h-custom'>
-        <div className='mockup-master flex items-center justify-center min-h-screen flex-col gap-7 basis-1/3 mt-6'>
+      <div className='all-windows-master flex flex-row w-full mt-5 h-custom4 max-h-custom md:flex-row flex-wrap'>
+        <div className='mockup-master flex items-center justify-center min-h-screen flex-col gap-7 basis-1/3'>
           {/* //////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-YELLOW ////////*/}
           <Draggable>
@@ -56,7 +56,7 @@ const Landing = () => {
         </div>
         {/* //////////////////////////////////////// */}
         {/* //////// MAC-WINDOW-TERMINAL ////////*/}
-        <div className='mac-windows-master basis-2/3 mt-6'>
+        <div className='mac-windows-master basis-2/3 mt-6 md:flex-row flex-wrap'>
           <Draggable>
             <div className="mac-window cursor-grab w-[85%] h-[60%] shadow-custom p-8 rounded-box mt-6" onClick={() => handleWindowClick('mac-window')}
               style={{

@@ -144,7 +144,7 @@
 @media screen and (max-width: 768px) {
 
   .container-projects {
-    max-width: 95%;
+    max-width: 90%;
   }
 
   .carousel {
@@ -152,7 +152,7 @@
   }
 
   .carousel-item {
-    max-width: 100%;
+    max-width: 135%;
   }
 
   .carousel-intro-div {
