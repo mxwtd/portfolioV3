@@ -11,13 +11,7 @@ h2 {
 /* ///////// Windows ////////// */
 
 .mac-window {
-  position: relative;
-  width: 60%;
   background-color: #323232cb;
-  border-radius: 1rem;
-  padding: 2rem;
-  top: 5%;
-  left: 35%;
 }
 
 .mac-window-header {
@@ -79,11 +73,8 @@ h2 {
 .mac-window-2 {
   position: relative;
   top: -10%;
-  left: 50%;
-  width: 40%;
+  left: 15%;
   background-color: #0c2063df;
-  border-radius: 1rem;
-  padding: 2rem;
   z-index: 5;
 }
 
