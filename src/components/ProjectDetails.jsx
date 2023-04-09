@@ -1,5 +1,5 @@
 import React from 'react';
-import "/Users/maxwtd/Desktop/PortfolioV3/src/assets/stylesheets/ProjectDetails.css";
+import "../assets/stylesheets/ProjectDetails.css";
 
 const ProjectDetails = ({ project }) => {
   // You can add more details about the projects here

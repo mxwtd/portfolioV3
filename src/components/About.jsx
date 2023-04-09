@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Draggable from "react-draggable";
-import "/Users/maxwtd/Desktop/PortfolioV3/src/assets/stylesheets/About.css"
+import "../assets/stylesheets/About.css";
 
 const About = () => {
 

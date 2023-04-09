@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Draggable from "react-draggable";
-import "/Users/maxwtd/Desktop/PortfolioV3/src/assets/stylesheets/Home.css"
-import myImage from '/Users/maxwtd/Desktop/PortfolioV3/src/assets/blob.png';
+import "../assets/stylesheets/Home.css";
+import myImage from "../assets/blob.png";
 
 const Landing = () => {
   const [activeWindow, setActiveWindow] = useState('');

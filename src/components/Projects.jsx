@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
-import '/Users/maxwtd/Desktop/PortfolioV3/src/assets/stylesheets/Projects.css';
-import ProjectDetails from '/Users/maxwtd/Desktop/PortfolioV3/src/components/ProjectDetails.jsx';
+import "../assets/stylesheets/Projects.css";
+import ProjectDetails from "../components/ProjectDetails.jsx";
 
 const Projects = () => {
   const carouselRef = useRef(null);
