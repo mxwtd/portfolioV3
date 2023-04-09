@@ -8,6 +8,19 @@ h2 {
   font-weight: 700;
 }
 
+.container-home {
+  background-color: #2e2e2e7d;
+  border-radius: 2rem;
+  padding: 2rem;
+  max-height: 70%;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 8px 32px 0 rgb(35, 35, 35);
+  backdrop-filter: blur( 4px );
+  -webkit-backdrop-filter: blur( 4px );
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
 /* ///////// Windows ////////// */
 
 .mac-window {
@@ -70,26 +83,17 @@ h2 {
   padding-bottom: 30%;
 }
 
-.mac-window-2 {
-  position: relative;
-  top: -10%;
-  left: 15%;
-  background-color: #0c2063df;
-  z-index: 5;
-}
-
 .mockup-code-1 {
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='hsla(259, 0%, 26%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
 }
 
-.mockup-code-1-master {
-  /* position: absolute;
-  top: 39%;
-  left: 33%; */
-}
-
 .mockup-code-2 {
   background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='20' height='20' patternTransform='scale(1) rotate(0)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(0, 0%, 100%, 0)'/><path d='M 10,-2.55e-7 V 20 Z M -1.1677362e-8,10 H 20 Z'  stroke-width='1' stroke='hsla(259, 0%, 26%, 1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+}
+
+.mac-window-2 {
+  background-color: #0c2063df;
+  z-index: 5;
 }
 
 /* ///////// Blinking Cursor ////////// */
@@ -114,37 +118,96 @@ h2 {
   ///////// MEDIA QUERIES /////////
 ////////////////////////////////// */
 
-@media screen and (max-width: 1200px) {
+@media screen and (min-width: 1200px) {
 
   .mac-window-2 {
-    min-width: 100%;
-    max-width: 100%;
+    position: relative;
+    top: -10%;
+    left: 15%;
+    background-color: #0c2063df;
+    z-index: 5;
   }
 
-  .mac-windows-master {
-    min-width: 100%;
-    max-width: 100%;
+  .all-windows-master {
+    margin-top: -2.5rem;
+    margin-left: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 1200px) {
+
+  .home-title {
+    margin-left: 1rem;
+  }
+
+  h1 {
+    font-size: 1.1rem;
+  }
+
+  .git-intro {
+    font-size: 1.5rem;
+  }
+
+  .mac-window-header-title {
+    font-size: 0.9rem;
+  }
+
+  .mac-window-2 {
+    position: relative;
+    margin: 0 auto;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   .mac-window {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   .mockup-code-2-master {
     min-width: 100%;
     max-width: 100%;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
   .mockup-code-2 {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   .mockup-code-1-master {
     display: none;
+  }
+
+  .mockup-master {
+    flex-basis: 100%;
+  }
+
+  .avatar-div {
+    min-width: 40%;
+  }
+
+  .mac-windows-master {
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 0;
+  }
+
+  .all-windows-master {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
   }
 }

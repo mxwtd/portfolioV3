@@ -9,7 +9,7 @@ const About = () => {
   const handleWindowClick = (windowName) => {
     setActiveWindow(windowName);
   };
-  
+
   return (
     <div className="container">
       <div className="projects-title">
@@ -52,7 +52,7 @@ const About = () => {
               <p className="mac-window-header-title text-gray-300">~/Desktop/PortfolioV3</p>
             </div>
             <div className='leading-tigh px-5'>
-              <h1 className='text-white mt-10 '>~ Technologies + Tools</h1>
+              <h1 className='text-white mt-10'>~ Technologies + Tools</h1>
               ├── src/<br></br>
               │   ├── <span className='font-bold text-white'>Html</span><br></br>
               │   ├── <span className='font-bold text-white'>CSS</span><br></br>
@@ -69,7 +69,7 @@ const About = () => {
               ├── <span className='font-bold text-white'>Postman</span><br></br>
               └── <span className='font-bold text-white'>SQLite + PostgreSQL</span><br></br>
               <br></br>
-              <p>I have worked with all of these technologies and tools in the past at varying levels.</p>
+              <p className='tech-window-info'>I have worked with all of these technologies and tools in the past at varying levels.</p>
             </div>
           </div>
         </Draggable>
@@ -84,11 +84,11 @@ const About = () => {
               }}>
               <div className="flex items-center justify-center min-h-screen flex-col gap-5">
                 <div className='bg-stone-600 w-[90%] p-4 rounded-box'>
-                  <h2 className='text-white text-2xl font-bold pl-3'>{"Socials >"}</h2>
+                  <h2 className='text-white text-2xl font-bold pl-3'>{"Contact >"}</h2>
                   <div className='contact-links flex flex-row justify-center gap-4 mt-1'>
-                    <a href="" className='text-white font-bold text-xl'>Github</a>
-                    <a href="" className='text-white font-bold text-xl'>LinkedIn</a>
-                    <a href="" className='text-white font-bold text-xl'>Email</a>
+                    <a href="https://github.com/mxwtd" target={'_blank'} className='text-white font-bold text-xl'>Github</a>
+                    <a href="https://www.linkedin.com/in/max-whitehead-5b186b163/" target={'_blank'} className='text-white font-bold text-xl'>LinkedIn</a>
+                    <a href="mailto:midtown.fret-0e@icloud.com" target={'_blank'} className='text-white font-bold text-xl'>Email</a>
                   </div>
                 </div>
                 <div className='bg-stone-600 w-[90%] p-4 rounded-box'>

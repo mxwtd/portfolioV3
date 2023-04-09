@@ -1,4 +1,3 @@
-// import React from "react";
 import React, { useState } from 'react';
 import Draggable from "react-draggable";
 import "/Users/maxwtd/Desktop/PortfolioV3/src/assets/stylesheets/Home.css"
@@ -11,11 +10,11 @@ const Landing = () => {
     setActiveWindow(windowName);
   };
   return (
-    <div className="container">
+    <div className="container-home">
       <div className="projects-title">
-        <h1 className="text-white text-4xl mt-6 ml-10">Portfolio<span className="text-yellow-500">()</span>;</h1>
+        <h1 className="text-white text-4xl mt-6 ml-10 home-title">Portfolio<span className="text-yellow-500">()</span>;</h1>
       </div>
-      <div className='all-windows-master flex flex-row w-full mt-5 h-custom4 max-h-custom md:flex-row flex-wrap'>
+      <div className='all-windows-master flex flex-row w-full min-h-[100%] md:flex-row flex-wrap'>
         <div className='mockup-master flex items-center justify-center min-h-screen flex-col gap-7 basis-1/3'>
           {/* //////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-YELLOW ////////*/}
@@ -26,7 +25,7 @@ const Landing = () => {
               }}>
               <div className="mockup-code bg-yellow-500 text-primary-content max-w-xs cursor-grab select-none mockup-code-2 shadow-custom">
                 <div className="avatar flex justify-center items-center">
-                  <div className="w-custom rounded-full bg-stone-700">
+                  <div className="avatar-div w-custom rounded-full bg-stone-700">
                     <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="mt-2 scale-95"/>
                   </div>
                 </div>
@@ -56,7 +55,7 @@ const Landing = () => {
         </div>
         {/* //////////////////////////////////////// */}
         {/* //////// MAC-WINDOW-TERMINAL ////////*/}
-        <div className='mac-windows-master basis-2/3 mt-6 md:flex-row flex-wrap'>
+        <div className='mac-windows-master basis-2/3 mt-16 md:flex-row flex-wrap'>
           <Draggable>
             <div className="mac-window cursor-grab w-[85%] h-[60%] shadow-custom p-8 rounded-box mt-6" onClick={() => handleWindowClick('mac-window')}
               style={{
@@ -73,8 +72,8 @@ const Landing = () => {
                 </p>
               </div>
               <h1 className="text-white mt-4">Last login: Mon Mar 27 09:32:35</h1>
-              <h1 className="text-blue-500 mt-4">➜{" "}<span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>){" "}<span className="text-yellow-500">✗</span>{" "}<span className="text-white text-4xl">Max W</span></h1>
-              <h1 className="text-blue-500 ">➜{" "}<span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>){" "}<span className="text-yellow-500">✗</span>{" "}<span className="text-white text-xl">Full Stack Web Dev_</span></h1>
+              <h1 className="text-blue-500 mt-4">➜{" "}<span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>){" "}<span className="text-yellow-500">✗</span>{" "}<span className="text-white text-4xl git-intro">Max W</span></h1>
+              <h1 className="text-blue-500 ">➜{" "}<span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>){" "}<span className="text-yellow-500">✗</span>{" "}<span className="text-white text-xl git-intro">Full Stack Web Dev_</span></h1>
               <h1 className="text-blue-500 bottom-h1">➜{" "}<span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>){" "}<span className="text-yellow-500">✗</span><span className="blinking-bar text-1xl text-white font-black">{" "}|{" "}</span></h1>
             </div>
           </Draggable>
@@ -95,12 +94,12 @@ const Landing = () => {
                 <p className="mac-window-header-title text-gray-300">~/Desktop/PortfolioV3</p>
               </div>
               <h1 className="text-blue-500 mt-4">➜  <span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>) <span className="text-yellow-500">✗</span> <span className="text-white text-2xl">$ pwd</span></h1>
-                <div className='leading-tight pt-2'>
-                  ├── src/<br></br>
-                  │   ├── <a href='/projects'><span className='text-xl font-bold text-white hover:text-gray-400'>Projects ↘</span></a><br></br>
-                  │   └── <a href='/About'><span className='text-xl font-bold text-white hover:text-gray-400'>About ↘</span></a><br></br>
-                  └── <a><span className='text-xl font-bold text-white hover:text-gray-400'>GitHub ↘</span></a><br></br>
-                </div>
+              <div className='leading-tight pt-2'>
+                ├── src/<br></br>
+                │   ├── <a href='/projects'><span className='text-xl font-bold text-white hover:text-gray-400'>Projects ↘</span></a><br></br>
+                │   └── <a href='/About'><span className='text-xl font-bold text-white hover:text-gray-400'>About ↘</span></a><br></br>
+                └── <a><span className='text-xl font-bold text-white hover:text-gray-400'>GitHub ↘</span></a><br></br>
+              </div>
             </div>
           </Draggable>
         {/* //////// MAC-WINDOW-LANGUAGES END ////////*/}

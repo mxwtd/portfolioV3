@@ -23,9 +23,9 @@ const ProjectDetails = ({ project }) => {
       github: "https://www.tumbuka-cafes.com/"
     },
     Friendify: {
-      title: 'Tumbuka',
-      description: 'An E-commerce app for a small coffee roastery.',
-      content: "Tumbuka is an e-commerce app for a small coffee roastery based in Southern France. The app allows users to browse the roastery's products, add them to their cart, and place orders. The app also features a dashboard that allows the roastery to manage their products and orders. The website ended up revoltionizing the roastery's business, allowing them to access a whole new market of users online.",
+      title: 'Friendify',
+      description: 'A Social Media app that allows you to network and meet new friends.',
+      content: "Friendify is a social media app that allows users to create profiles, make friends, and find activities nearby. The app features a dashboard that displays nearby activities, as well as a search bar that allows users to find specific activity categories or locations. The app also allows users to create and modify their own bookings, displaying useful info about bookings, such as date and price.",
       technologies: "Ruby, Rails, JS, HTML, CSS, SCSS, PostgreSQL, Heroku, Cloudinary API",
       vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1680464001/Friendify_showreel_hemzxd.mp4",
       site: "https://github.com/mxwtd/friendify",
@@ -36,22 +36,22 @@ const ProjectDetails = ({ project }) => {
   const { title, description, technologies, content, vid, site, github } = projectData[project] || {};
 
   return (
-    <div className='project-details-card px-10'>
-      <div className='project-info-intro flex flex-row justify-between px-1 py-3 mb-4'>
-        <div className='project-info-title'>
-          <h2 className='text-5xl text-white'>{title}</h2>
+    <div className='project-details-card px-4 sm:px-6 lg:px-8'>
+      <div className='project-info-intro flex flex-col sm:flex-row justify-between px-1 py-3 mb-4'>
+        <div className='project-info-title sm:w-1/2'>
+          <h2 className='text-3xl sm:text-5xl text-white'>{title}</h2>
           <p className='text-white'>{description}</p>
         </div>
-        <div className='project-nav-btn-master flex flex-row mt-10 gap-3'>
-          <a href='/projects'><span className='project-nav-btn text-xl font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>{"<"} Back</span></a><br></br>
-          <a href={site} target={'_blank'}><span className='project-nav-btn text-xl font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>Live Site</span></a><br></br>
-          <a href={github} target={'_blank'}><span className='project-nav-btn text-xl font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>GitHub {">"}</span></a><br></br>
+        <div className='project-nav-btn-master flex flex-row sm:w-1/2 sm:justify-end mt-4 sm:mt-10 gap-3'>
+          <a href='/projects'><span className='project-nav-btn text-lg font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>{"<"} Back</span></a><br></br>
+          <a href={site} target={'_blank'}><span className='project-nav-btn text-lg font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>Live Site</span></a><br></br>
+          <a href={github} target={'_blank'}><span className='project-nav-btn text-lg font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>GitHub {">"}</span></a><br></br>
         </div>
       </div>
-      <div className='project-info-card flex flex-row gap-10'>
-        <video src={vid} style={{width:"60%"}} className="rounded-box object-cover h-custom3 shadow-custom" autoPlay loop muted />
-        <div className='project-info-card-text flex flex-col gap-6 min-h-custom2 h-custom3'>
-          <div className="mockup-code bg-primary text-primary-content max-w-lg  shadow-custom">
+      <div className='project-info-card flex flex-col lg:flex-row gap-10'>
+        <video src={vid} className="rounded-box object-cover h-custom3 shadow-custom lg:w-[80vh]" autoPlay loop muted />
+        <div className='project-info-card-text flex flex-col gap-6 lg:w-1/2'>
+          <div className="mockup-code bg-primary text-primary-content max-w-lg shadow-custom">
             <div className='px-5'>
               <h1 >Technologies used:</h1>
               <p>{technologies}</p>
