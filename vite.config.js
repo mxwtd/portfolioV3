@@ -14,5 +14,6 @@ export default defineConfig({
   base: './',
   build: {
     outDir: 'dist',
+    assetsInclude: ['./src/assets/stylesheets/output.css'],
   },
 });
