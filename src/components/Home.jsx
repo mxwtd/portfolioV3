@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Draggable from "react-draggable";
 import "../assets/stylesheets/Home.css";
-import myImage from "../assets/blob.png";
+// import myImage from "../assets/blob.png";
 
 const Landing = () => {
   const [activeWindow, setActiveWindow] = useState('');
@@ -45,7 +45,7 @@ const Landing = () => {
                   <h1 className="mx-6"><h1>{">"}_ Drag Us!</h1></h1>
                 </div>
                 <div className='flex justify-center items-center'>
-                  <img src={myImage} alt="blob" className="drop-shadow-2xl user-select-none w-custom" />
+                  {/* <img src={myImage} alt="blob" className="drop-shadow-2xl user-select-none w-custom" /> */}
                 </div>
               </div>
             </div>
