@@ -15,6 +15,5 @@ export default defineConfig({
   build: {
     outDir: 'dist',
     assetsInclude: ['./src/assets/stylesheets/output.css'],
-    publicPath: '/portfolioV3/',
   },
 });
