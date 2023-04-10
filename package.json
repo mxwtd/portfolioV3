@@ -9,7 +9,6 @@
     "preview": "vite preview",
     "predeploy": "vite build",
     "build:css": "tailwindcss -i ./src/input.css -o ./src/assets/stylesheets/output.css",
-    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "daisyui": "^2.51.5",
