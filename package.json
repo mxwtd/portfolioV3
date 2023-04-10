@@ -9,12 +9,10 @@
     "preview": "vite preview",
     "predeploy": "vite build",
     "build:css": "tailwindcss -i ./src/input.css -o ./src/assets/stylesheets/output.css",
-    "deploy": "gh-pages -d dist"
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
     "daisyui": "^2.51.5",
-    "gsap": "^3.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-draggable": "^4.4.5",

@@ -11,9 +11,8 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/portfolioV3/',
+  base: './',
   build: {
     outDir: 'dist',
-    assetsInclude: ['./src/assets/stylesheets/output.css'],
   },
 });
