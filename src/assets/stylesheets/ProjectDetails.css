@@ -5,9 +5,19 @@
 
 @media screen and (max-width: 1200px) {
   .project-nav-btn {
-    font-size: 0.8rem;
+    font-size: 0.70rem;
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .mockup-code {
+    min-width: 80% !important;
+  }
+
+  .project-nav-btn-master {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
   }
 }

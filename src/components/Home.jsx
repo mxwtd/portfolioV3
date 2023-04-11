@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Draggable from "react-draggable";
+import { Link } from 'react-router-dom';
 import "../assets/stylesheets/Home.css";
 // import myImage from "../assets/blob.png";
 
@@ -9,13 +10,14 @@ const Landing = () => {
   const handleWindowClick = (windowName) => {
     setActiveWindow(windowName);
   };
+
   return (
     <div className="container-home">
       <div className="projects-title">
         <h1 className="text-white text-4xl mt-6 ml-10 home-title">Portfolio<span className="text-yellow-500">()</span>;</h1>
       </div>
       <div className='all-windows-master flex flex-row w-full min-h-[100%] md:flex-row flex-wrap'>
-        <div className='mockup-master flex items-center justify-center min-h-screen flex-col gap-7 basis-1/3'>
+        <div className='mockup-master flex items-center justify-center min-h-screen flex-col gap-7 basis-1/3 mt-6'>
           {/* //////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-YELLOW ////////*/}
           <Draggable>
@@ -23,7 +25,7 @@ const Landing = () => {
               style={{
                 zIndex: activeWindow === 'mockup-code-2-master' ? 6 : 0,
               }}>
-              <div className="mockup-code bg-yellow-500 text-primary-content max-w-xs cursor-grab select-none mockup-code-2 shadow-custom">
+              <div className="mockup-code bg-yellow-500 w-custom text-primary-content cursor-grab select-none mockup-code-2 shadow-custom">
                 <div className="avatar flex justify-center items-center">
                   <div className="avatar-div w-custom rounded-full bg-stone-700">
                     <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="mt-2 scale-95"/>
@@ -40,12 +42,17 @@ const Landing = () => {
               style={{
                 zIndex: activeWindow === 'mockup-code-1-master' ? 6 : 0,
               }}>
-              <div className="mockup-code bg-primary text-primary-content max-w-xs cursor-grab select-none mockup-code-1 shadow-custom">
-                <div>
-                  <h1 className="mx-6"><h1>{">"}_ Drag Us!</h1></h1>
-                </div>
-                <div className='flex justify-center items-center'>
-                  {/* <img src={myImage} alt="blob" className="drop-shadow-2xl user-select-none w-custom" /> */}
+              <div className="mockup-code bg-primary w-custom text-primary-content cursor-grab select-none mockup-code-1 shadow-custom">
+                <div className='flex flex-col items-center mt-5 gap-3'>
+                  <div className='rounded-box bg-slate-200/75 w-[90%] p-5'>
+                    <p className='text-stone-700 font-extrabold px-5 py-3 text-center'>Hi, I'm Max, a Junior Full Stack Dev.</p>
+                  </div>
+                  <div className='rounded-box bg-slate-200/75 w-[90%] p-5'>
+                    <p className='text-stone-700 font-extrabold px-5 py-3 text-center'>📍 Based in London.</p>
+                  </div>
+                  <div className='rounded-box bg-slate-200/75 w-[90%] p-5'>
+                    <p className='text-stone-700 font-extrabold px-5 py-3 text-center'>📡 I speak French and English.</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -96,9 +103,9 @@ const Landing = () => {
               <h1 className="text-blue-500 mt-4">➜  <span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>) <span className="text-yellow-500">✗</span> <span className="text-white text-2xl">$ pwd</span></h1>
               <div className='leading-tight pt-2'>
                 ├── src/<br></br>
-                │   ├── <a href='/projects'><span className='text-xl font-bold text-white hover:text-gray-400'>Projects ↘</span></a><br></br>
-                │   └── <a href='/About'><span className='text-xl font-bold text-white hover:text-gray-400'>About ↘</span></a><br></br>
-                └── <a><span className='text-xl font-bold text-white hover:text-gray-400'>GitHub ↘</span></a><br></br>
+                │   ├── <Link to='/projects'><span className='text-xl font-bold text-white hover:text-gray-400'>Projects ↘</span></Link><br></br>
+                │   └── <Link to='/About'><span className='text-xl font-bold text-white hover:text-gray-400'>About ↘</span></Link><br></br>
+                └── <a href='https://github.com/mxwtd'><span className='text-xl font-bold text-white hover:text-gray-400'>GitHub ↘</span></a><br></br>
               </div>
             </div>
           </Draggable>

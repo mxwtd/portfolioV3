@@ -18,8 +18,8 @@ const About = () => {
       <div className='flex flex-col justify-center md:flex-row flex-wrap min-w-full gap-10 px-5 mt-7'>
       {/* //////// MAC-WINDOW-YELLOW ////////*/}
         <Draggable>
-          <div className="mockup-code-3-master">
-            <div className="mockup-code bg-yellow-500 w-full text-primary-content cursor-grab select-none mockup-code-3 shadow-custom" onClick={() => handleWindowClick('mockup-code-3')}
+          <div className="mockup-code-3-master min-h-full">
+            <div className="mockup-code bg-yellow-500 w-full min-h-full text-primary-content cursor-grab select-none mockup-code-3 shadow-custom" onClick={() => handleWindowClick('mockup-code-3')}
               style={{
                 zIndex: activeWindow === 'mockup-code-3' ? 6 : 0,
               }}>
@@ -39,7 +39,7 @@ const About = () => {
         {/* //////////////////////////////////////// */}
         {/* //////// MAC-WINDOW-TERMINAL ////////*/}
         <Draggable>
-          <div className="mac-window-3 cursor-grab bg-stone-700/75 rounded-box shadow-custom" onClick={() => handleWindowClick('mac-window-3')}
+          <div className="mac-window-3 cursor-grab bg-stone-700/75 rounded-box min-h-full shadow-custom" onClick={() => handleWindowClick('mac-window-3')}
             style={{
               zIndex: activeWindow === 'mac-window-3' ? 6 : 0,
             }}>
@@ -64,7 +64,7 @@ const About = () => {
               │   ├── <span className='font-bold text-white'>Python</span><br></br>
               │   └── <span className='font-bold text-white'>Ruby + Rails</span><br></br>
               ├── <span className='font-bold text-white'>Git + GitHub</span><br></br>
-              ├── <span className='font-bold text-white'>Heroku</span><br></br>
+              ├── <span className='font-bold text-white'>Heroku, Netlify</span><br></br>
               ├── <span className='font-bold text-white'>Cloudinary</span><br></br>
               ├── <span className='font-bold text-white'>Postman</span><br></br>
               └── <span className='font-bold text-white'>SQLite + PostgreSQL</span><br></br>
@@ -77,8 +77,8 @@ const About = () => {
         {/* //////////////////////////////////////// */}
         {/* //////// MAC-WINDOW-GREY ////////*/}
         <Draggable>
-          <div className="mockup-code-5-master">
-            <div className="mockup-code bg-stone-700/75 w-full text-primary-content cursor-grab select-none mockup-code-5 shadow-custom" onClick={() => handleWindowClick('mockup-code-5')}
+          <div className="mockup-code-5-master min-h-full">
+            <div className="mockup-code bg-stone-700/75 w-full min-h-full text-primary-content cursor-grab select-none mockup-code-5 shadow-custom" onClick={() => handleWindowClick('mockup-code-5')}
               style={{
                 zIndex: activeWindow === 'mockup-code-5' ? 6 : 0,
               }}>
@@ -86,9 +86,9 @@ const About = () => {
                 <div className='bg-stone-600 w-[90%] p-4 rounded-box'>
                   <h2 className='text-white text-2xl font-bold pl-3'>{"Contact >"}</h2>
                   <div className='contact-links flex flex-row justify-center gap-4 mt-1'>
-                    <a href="https://github.com/mxwtd" target={'_blank'} className='text-white font-bold text-xl'>Github</a>
-                    <a href="https://www.linkedin.com/in/max-whitehead-5b186b163/" target={'_blank'} className='text-white font-bold text-xl'>LinkedIn</a>
-                    <a href="mailto:midtown.fret-0e@icloud.com" target={'_blank'} className='text-white font-bold text-xl'>Email</a>
+                    <a href="https://github.com/mxwtd" target={'_blank'} className='text-white font-bold text-xl cursor-pointer social-links'>Github</a>
+                    <a href="https://www.linkedin.com/in/max-whitehead-5b186b163/" target={'_blank'} className='text-white font-bold text-xl cursor-pointer social-links'>LinkedIn</a>
+                    <a href="mailto:midtown.fret-0e@icloud.com" target={'_blank'} className='text-white font-bold text-xl cursor-pointer social-links'>Email</a>
                   </div>
                 </div>
                 <div className='bg-stone-600 w-[90%] p-4 rounded-box'>

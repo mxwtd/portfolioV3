@@ -94,10 +94,10 @@ const Projects = () => {
         <div ref={carouselRef} className="carousel carousel-center h-custom p-4 space-x-12 bg-stone-600/20 rounded-box mt-9 py-10 px-14">
         <div className="carousel-item shadow-custom">
           <div className="indicator">
-            <div class="indicator-item indicator-middle indicator-center badge badge-primary mt-6 p-4 text-lg font-bold scroll-indicator">
+            <div className="indicator-item indicator-middle indicator-center badge badge-primary mt-6 p-4 text-lg font-bold scroll-indicator">
               <div ref={scrollerMasterRef} className='scroller-master'>
-                <div class="scroller-wheel">
-                  <a href="javascript:;" class="scroll-down mouse effect1">
+                <div className="scroller-wheel">
+                  <a href="javascript:;" className="scroll-down mouse effect1">
                     <span id="scroll-down-span"></span>
                   </a>
                 </div>
@@ -110,42 +110,45 @@ const Projects = () => {
         <div className="carousel-item shadow-custom">
           <div className="indicator">
             <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Finlit</span>
-            <a
+            <span
               onClick={(e) => {
                 e.preventDefault();
                 handleViewClick('Finlit');
               }}
+              className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold"
             >
-              <span className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
-            </a>
+              View
+            </span>
             <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680082834/Finlit_showreel_b23klk.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
           </div>
         </div>
         <div className="carousel-item shadow-custom">
           <div className="indicator">
             <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Friendify</span>
-            <a
+            <span
               onClick={(e) => {
                 e.preventDefault();
                 handleViewClick('Friendify');
               }}
+              className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold"
             >
-              <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
-            </a>
+              View
+            </span>
             <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680464001/Friendify_showreel_hemzxd.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
           </div>
         </div>
         <div className="carousel-item shadow-custom">
           <div className="indicator">
             <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Tumbuka</span>
-            <a
+            <span
               onClick={(e) => {
                 e.preventDefault();
                 handleViewClick('Tumbuka');
               }}
+              className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold"
             >
-              <span class="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold">View</span>
-            </a>
+              View
+            </span>
             <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680075752/Tumbuka_showreel_uvw7cm.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted />
           </div>
         </div>
