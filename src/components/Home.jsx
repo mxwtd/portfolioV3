@@ -17,7 +17,7 @@ const Landing = () => {
         <h1 className="text-white text-4xl mt-6 ml-10 home-title">Portfolio<span className="text-yellow-500">()</span>;</h1>
       </div>
       <div className='all-windows-master flex flex-row w-full min-h-[100%] md:flex-row flex-wrap'>
-        <div className='mockup-master flex items-center justify-center min-h-screen flex-col gap-7 basis-1/3 mt-6'>
+        <div className='mockup-master flex items-center justify-center flex-col gap-7 basis-1/3 mt-6'>
           {/* //////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-YELLOW ////////*/}
           <Draggable>
@@ -44,14 +44,14 @@ const Landing = () => {
               }}>
               <div className="mockup-code bg-primary w-custom text-primary-content cursor-grab select-none mockup-code-1 shadow-custom">
                 <div className='flex flex-col items-center mt-5 gap-3'>
-                  <div className='rounded-box bg-slate-200/75 w-[90%] p-5'>
-                    <p className='text-stone-700 font-extrabold px-5 py-3 text-center'>Hi, I'm Max, a Junior Full Stack Dev.</p>
+                  <div className='rounded-box bg-slate-200/75 w-[90%] p-3'>
+                    <p className='text-stone-700 font-extrabold  text-center'>Hi, I'm Max, a Junior Full Stack Dev.</p>
                   </div>
-                  <div className='rounded-box bg-slate-200/75 w-[90%] p-5'>
-                    <p className='text-stone-700 font-extrabold px-5 py-3 text-center'>📍 Based in London.</p>
+                  <div className='rounded-box bg-slate-200/75 w-[90%] p-3'>
+                    <p className='text-stone-700 font-extrabold text-center'>📍 Based in London.</p>
                   </div>
-                  <div className='rounded-box bg-slate-200/75 w-[90%] p-5'>
-                    <p className='text-stone-700 font-extrabold px-5 py-3 text-center'>📡 I speak French and English.</p>
+                  <div className='rounded-box bg-slate-200/75 w-[90%] p-3'>
+                    <p className='text-stone-700 font-extrabold text-center'>📡 I speak French and English.</p>
                   </div>
                 </div>
               </div>
