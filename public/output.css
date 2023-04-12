@@ -2635,6 +2635,11 @@ html {
   background-color: rgb(194 65 12 / 0.75);
 }
 
+.bg-primary {
+  --tw-bg-opacity: 1;
+  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+}
+
 .bg-stone-200\/75 {
   background-color: rgb(231 229 228 / 0.75);
 }

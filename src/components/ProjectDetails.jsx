@@ -52,13 +52,13 @@ const ProjectDetails = ({ project }) => {
       <div className='project-info-card flex flex-col lg:flex-row gap-10'>
         <video src={vid} className="rounded-box object-cover h-custom3 shadow-custom lg:w-[80vh]" autoPlay loop muted />
         <div className='project-info-card-text flex flex-col gap-6 lg:w-1/2'>
-          <div className="mockup-code bg-orange-700/75 text-primary-content max-w-lg shadow-custom">
+          <div className="mockup-code mockup-code-project-info bg-primary text-primary-content max-w-lg shadow-custom">
             <div className='px-5'>
               <h1 >Technologies used:</h1>
               <p>{technologies}</p>
             </div>
           </div>
-          <div className="mockup-code bg-orange-700/75 text-primary-content max-w-lg shadow-custom">
+          <div className="mockup-code-project-info bg-primary text-primary-content max-w-lg shadow-custom">
             <div className='px-5'>
               <p>{content}</p>
             </div>

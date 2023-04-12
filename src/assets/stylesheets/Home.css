@@ -159,6 +159,7 @@ h2 {
     margin: 0 auto;
     min-width: 90%;
     max-width: 90%;
+    margin-bottom: 3rem;
   }
 
   .mac-window {
@@ -176,8 +177,8 @@ h2 {
   }
 
   .mockup-code-2 {
-    min-width: 100%;
-    max-width: 100%;
+    min-width: 90%;
+    max-width: 90%;
   }
 
   .mockup-code-1-master {
