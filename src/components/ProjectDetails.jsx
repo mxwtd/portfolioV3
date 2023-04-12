@@ -58,7 +58,7 @@ const ProjectDetails = ({ project }) => {
               <p>{technologies}</p>
             </div>
           </div>
-          <div className="mockup-code-project-info bg-primary text-primary-content max-w-lg shadow-custom">
+          <div className="mockup-code mockup-code-project-info bg-primary text-primary-content max-w-lg shadow-custom">
             <div className='px-5'>
               <p>{content}</p>
             </div>
