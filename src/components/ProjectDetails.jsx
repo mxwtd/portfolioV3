@@ -44,7 +44,7 @@ const ProjectDetails = ({ project }) => {
           <p className='text-white'>{description}</p>
         </div>
         <div className='project-nav-btn-master flex flex-row sm:w-1/2 lg:justify-end mt-4 sm:mt-10 gap-3'>
-          <Link to='/projects'><span className='project-nav-btn text-lg font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>{"<"} Back</span></Link><br></br>
+          <Link to='/projects' onClick={() => window.location.reload()}><span className='project-nav-btn text-lg font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>{"<"} Back</span></Link><br></br>
           <a href={site} target={'_blank'}><span className='project-nav-btn text-lg font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>Live Site</span></a><br></br>
           <a href={github} target={'_blank'}><span className='project-nav-btn text-lg font-bold bg-stone-800 text-white hover:text-gray-400 rounded-xl p-2'>GitHub {">"}</span></a><br></br>
         </div>
