@@ -2433,6 +2433,10 @@ html {
   box-shadow: 0 0 0 2px hsl(var(--b1));
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -2457,10 +2461,6 @@ html {
   margin-top: 0.25rem;
 }
 
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
 .mt-16 {
   margin-top: 4rem;
 }
@@ -2479,10 +2479,6 @@ html {
 
 .mt-6 {
   margin-top: 1.5rem;
-}
-
-.mt-7 {
-  margin-top: 1.75rem;
 }
 
 .mt-8 {
@@ -2635,13 +2631,12 @@ html {
   border-radius: 0.75rem;
 }
 
-.bg-primary {
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--p) / var(--tw-bg-opacity));
+.bg-orange-700\/75 {
+  background-color: rgb(194 65 12 / 0.75);
 }
 
-.bg-slate-200\/75 {
-  background-color: rgb(226 232 240 / 0.75);
+.bg-stone-200\/75 {
+  background-color: rgb(231 229 228 / 0.75);
 }
 
 .bg-stone-500 {
@@ -2670,11 +2665,6 @@ html {
 .bg-stone-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(41 37 36 / var(--tw-bg-opacity));
-}
-
-.bg-yellow-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(234 179 8 / var(--tw-bg-opacity));
 }
 
 .object-cover {
@@ -2741,8 +2731,8 @@ html {
   padding-top: 0.5rem;
 }
 
-.text-center {
-  text-align: center;
+.text-left {
+  text-align: left;
 }
 
 .text-2xl {

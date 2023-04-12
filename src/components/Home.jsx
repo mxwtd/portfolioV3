@@ -14,10 +14,10 @@ const Landing = () => {
   return (
     <div className="container-home">
       <div className="projects-title">
-        <h1 className="text-white text-4xl mt-6 ml-10 home-title">Portfolio<span className="text-yellow-500">()</span>;</h1>
+        <h1 className="text-white text-4xl mt-6 ml-10 min-w-full home-title"><span className='bg-stone-700/75 p-3 rounded-box'>Portfolio<span className="text-yellow-500">()</span>;</span></h1>
       </div>
       <div className='all-windows-master flex flex-row w-full min-h-[100%] md:flex-row flex-wrap'>
-        <div className='mockup-master flex items-center justify-center flex-col gap-7 basis-1/3 mt-6'>
+        <div className='mockup-master flex items-center justify-center flex-col gap-7 basis-1/3 mt-5'>
           {/* //////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-YELLOW ////////*/}
           <Draggable>
@@ -25,9 +25,9 @@ const Landing = () => {
               style={{
                 zIndex: activeWindow === 'mockup-code-2-master' ? 6 : 0,
               }}>
-              <div className="mockup-code bg-yellow-500 w-custom text-primary-content cursor-grab select-none mockup-code-2 shadow-custom">
+              <div className="mockup-code bg-orange-700/75 w-custom text-primary-content cursor-grab select-none mockup-code-2 shadow-custom">
                 <div className="avatar flex justify-center items-center">
-                  <div className="avatar-div w-custom rounded-full bg-stone-700">
+                  <div className="avatar-div w-custom rounded-full bg-stone-200/75">
                     <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="mt-2 scale-95"/>
                   </div>
                 </div>
@@ -42,16 +42,16 @@ const Landing = () => {
               style={{
                 zIndex: activeWindow === 'mockup-code-1-master' ? 6 : 0,
               }}>
-              <div className="mockup-code bg-primary w-custom text-primary-content cursor-grab select-none mockup-code-1 shadow-custom">
+              <div className="mockup-code bg-orange-700/75 w-custom text-primary-content cursor-grab select-none mockup-code-1 shadow-custom">
                 <div className='flex flex-col items-center mt-5 gap-3'>
-                  <div className='rounded-box bg-slate-200/75 w-[90%] p-3'>
-                    <p className='text-stone-700 font-extrabold  text-center'>Hi, I'm Max, a Junior Full Stack Dev.</p>
+                  <div className='rounded-box bg-stone-200/75 w-[90%] p-3'>
+                    <p className='text-stone-700 font-extrabold  text-left'>🧑‍💻 Junior Full Stack Dev.</p>
                   </div>
-                  <div className='rounded-box bg-slate-200/75 w-[90%] p-3'>
-                    <p className='text-stone-700 font-extrabold text-center'>📍 Based in London.</p>
+                  <div className='rounded-box bg-stone-200/75 w-[90%] p-3'>
+                    <p className='text-stone-700 font-extrabold text-left'>📍 Based in London.</p>
                   </div>
-                  <div className='rounded-box bg-slate-200/75 w-[90%] p-3'>
-                    <p className='text-stone-700 font-extrabold text-center'>📡 I speak French and English.</p>
+                  <div className='rounded-box bg-stone-200/75 w-[90%] p-3'>
+                    <p className='text-stone-700 font-extrabold text-left'>📡 I Speak English & French.</p>
                   </div>
                 </div>
               </div>
