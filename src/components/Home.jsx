@@ -25,7 +25,7 @@ const Landing = () => {
               style={{
                 zIndex: activeWindow === 'mockup-code-2-master' ? 6 : 0,
               }}>
-              <div className="mockup-code bg-orange-700/75 w-custom text-primary-content cursor-grab select-none mockup-code-2 shadow-custom">
+              <div className="mockup-code bg-orange-700/50 w-custom text-primary-content cursor-grab select-none mockup-code-2 shadow-custom">
                 <div className="avatar flex justify-center items-center">
                   <div className="avatar-div w-custom rounded-full bg-stone-200/75">
                     <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="mt-2 scale-95"/>
@@ -42,7 +42,7 @@ const Landing = () => {
               style={{
                 zIndex: activeWindow === 'mockup-code-1-master' ? 6 : 0,
               }}>
-              <div className="mockup-code bg-orange-700/75 w-custom text-primary-content cursor-grab select-none mockup-code-1 shadow-custom">
+              <div className="mockup-code bg-orange-700/50 w-custom text-primary-content cursor-grab select-none mockup-code-1 shadow-custom">
                 <div className='flex flex-col items-center mt-5 gap-3'>
                   <div className='rounded-box bg-stone-200/75 w-[90%] p-3'>
                     <p className='text-stone-700 font-extrabold  text-left'>🧑‍💻 Junior Full Stack Dev.</p>

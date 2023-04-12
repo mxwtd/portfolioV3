@@ -2631,8 +2631,8 @@ html {
   border-radius: 0.75rem;
 }
 
-.bg-orange-700\/75 {
-  background-color: rgb(194 65 12 / 0.75);
+.bg-orange-700\/50 {
+  background-color: rgb(194 65 12 / 0.5);
 }
 
 .bg-primary {

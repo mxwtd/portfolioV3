@@ -71,16 +71,8 @@ const Projects = () => {
   return (
     <div className="container-projects">
       <div className="projects-title">
-        <h1 className="text-white text-4xl mt-5">Projects</h1>
+        <h1 className="text-white text-4xl mt-4">Projects</h1>
         <p className="text-white text-2xl mt-1">console.log<span className="text-blue-500">(</span>projects<span className="text-yellow-500">()</span><span className="text-blue-500">)</span>;</p>
-      </div>
-      <div className="mac-window-header-projects">
-        <div className="mac-window-header-button-master-projects">
-          <div className="mac-window-header-button-projects btn-red"></div>
-          <div className="mac-window-header-button-projects btn-yellow"></div>
-          <div className="mac-window-header-button-projects btn-green"></div>
-        </div>
-        <p className="mac-window-header-title-projects text-gray-300">~/Desktop/PortfolioV3/Projects</p>
       </div>
       {showProjectDetails && (
         <div className="mockup-code mockup-code-4 mt-8 bg-stone-500 min-h-full">
