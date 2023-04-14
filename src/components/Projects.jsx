@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import "../assets/stylesheets/Projects.css";
 import ProjectDetails from "../components/ProjectDetails.jsx";
 
+
 const Projects = () => {
   const carouselRef = useRef(null);
   const scrollerMasterRef = useRef(null);
