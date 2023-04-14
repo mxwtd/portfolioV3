@@ -184,13 +184,23 @@ h2 {
     align-items: center;
   }
 
-  .mockup-code-2 {
+  .mockup-code-1-master {
+    min-width: 100%;
+    max-width: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mockup-code-1 {
     min-width: 90%;
     max-width: 90%;
   }
 
-  .mockup-code-1-master {
-    display: none;
+  .mockup-code-2 {
+    min-width: 90%;
+    max-width: 90%;
   }
 
   .mockup-master {
