@@ -5,9 +5,11 @@ module.exports = {
     extend: {},
     maxHeight: {
       'custom': '75vh',
+      'custom3': '95vh'
     },
     minHeight: {
       'custom2': '50vh',
+      'custom3': '95vh'
     },
     height: {
       'custom': '68vh',

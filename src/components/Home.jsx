@@ -103,7 +103,7 @@ const Landing = () => {
               <h1 className="text-blue-500 mt-4">➜  <span className="text-blue-200">PortfolioV3</span> git:(<span className="text-red-500">main</span>) <span className="text-yellow-500">✗</span> <span className="text-white text-2xl">$ pwd</span></h1>
               <div className='leading-tight pt-2'>
                 ├── src/<br></br>
-                │   ├── <Link to='/projects'><span className='text-xl font-bold text-white hover:text-gray-400'>Projects ↘</span></Link><br></br>
+                │   ├── <Link to='/projects'><span className='sm:text-md md:text-xl font-bold text-white hover:text-gray-400'>Projects ↘</span></Link><br></br>
                 │   └── <Link to='/About'><span className='text-xl font-bold text-white hover:text-gray-400'>About ↘</span></Link><br></br>
                 └── <a href='https://github.com/mxwtd'><span className='text-xl font-bold text-white hover:text-gray-400'>GitHub ↘</span></a><br></br>
               </div>

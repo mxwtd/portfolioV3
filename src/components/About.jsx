@@ -15,10 +15,10 @@ const About = () => {
       <div className="projects-title">
         <h1 className="text-white text-4xl mt-6 ml-5">About<span className="text-yellow-500">()</span>;</h1>
       </div>
-      <div className='flex flex-col justify-center md:flex-row flex-wrap min-w-full gap-10 px-5 mt-9'>
+      <div className='mockup-master-about flex flex-col justify-center md:flex-row flex-wrap min-w-full gap-10 px-5 mt-9'>
       {/* //////// MAC-WINDOW-YELLOW ////////*/}
         <Draggable>
-          <div className="mockup-code-3-master min-h-full mb-10"  onClick={() => handleWindowClick('mockup-code-3-master')}
+          <div className="mockup-code-3-master min-h-full"  onClick={() => handleWindowClick('mockup-code-3-master')}
             style={{
               zIndex: activeWindow === 'mockup-code-3-master' ? 6 : 0,
             }}>
@@ -29,7 +29,7 @@ const About = () => {
                 </div>
                 <p className='text-stone-700 font-extrabold bg-stone-200/75 p-3 rounded-box'>
                   Hey I'm Max, a junior Fullstack Dev from the UK. I've recently finished a 9 week bootcamp at Le Wagon, where I learned the fundamentals of Ruby, Rails, AJAX, Javascript and more. I've been a self-taught developer up-until this point, building small projects here and there, and continually pushing skills with each one.
-                  I'm currently looking for a junior role in the tech industry, so if you have any opportunities please get in touch!
+                  I'm currently looking for a junior role as a Fullstack Dev, so if you have any opportunities please get in touch!
                 </p>
               </div>
             </div>
