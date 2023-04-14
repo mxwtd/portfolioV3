@@ -5,11 +5,28 @@ import "../assets/stylesheets/Home.css";
 // import myImage from "../assets/blob.png";
 
 const Landing = () => {
-  const [activeWindow, setActiveWindow] = useState('');
+    const [activeWindow, setActiveWindow] = useState(null);
+    const [holdTimer, setHoldTimer] = useState(null);
+    const [isDraggableEnabled, setIsDraggableEnabled] = useState(true);
 
-  const handleWindowClick = (windowName) => {
-    setActiveWindow(windowName);
-  };
+    const handleWindowClick = (windowName) => {
+      setActiveWindow(windowName);
+    };
+
+    const handleDragStart = (e) => {
+      if (window.innerWidth < 800) {
+        setIsDraggableEnabled(false);
+        setHoldTimer(
+          setTimeout(() => {
+            setIsDraggableEnabled(true);
+          }, 1000)
+        );
+      }
+    };
+
+    const handleDragStop = () => {
+      clearTimeout(holdTimer);
+    };
 
   return (
     <div className="container-home">
@@ -20,7 +37,7 @@ const Landing = () => {
         <div className='mockup-master flex items-center justify-center flex-col gap-7 basis-1/3 mt-5'>
           {/* //////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-YELLOW ////////*/}
-          <Draggable>
+          <Draggable onStart={handleDragStart} onStop={handleDragStop} disabled={!isDraggableEnabled}>
             <div className="mockup-code-2-master" onClick={() => handleWindowClick('mockup-code-2-master')}
               style={{
                 zIndex: activeWindow === 'mockup-code-2-master' ? 6 : 0,
@@ -37,7 +54,7 @@ const Landing = () => {
           {/* //////// MAC-WINDOW-YELLOW END ////////*/}
           {/* ////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-PURPLE ////////*/}
-          <Draggable>
+          <Draggable onStart={handleDragStart} onStop={handleDragStop} disabled={!isDraggableEnabled}>
             <div className="mockup-code-1-master" onClick={() => handleWindowClick('mockup-code-1-master')}
               style={{
                 zIndex: activeWindow === 'mockup-code-1-master' ? 6 : 0,
@@ -63,7 +80,7 @@ const Landing = () => {
         {/* //////////////////////////////////////// */}
         {/* //////// MAC-WINDOW-TERMINAL ////////*/}
         <div className='mac-windows-master basis-2/3 mt-16 md:flex-row flex-wrap'>
-          <Draggable>
+          <Draggable onStart={handleDragStart} onStop={handleDragStop} disabled={!isDraggableEnabled}>
             <div className="mac-window cursor-grab w-[85%] h-[60%] shadow-custom p-8 rounded-box mt-6" onClick={() => handleWindowClick('mac-window')}
               style={{
                 zIndex: activeWindow === 'mac-window' ? 6 : 0,
@@ -87,7 +104,7 @@ const Landing = () => {
           {/* //////// MAC-WINDOW-TERMINAL END ////////*/}
           {/* //////////////////////////////////////// */}
           {/* //////// MAC-WINDOW-LANGUAGES ////////*/}
-          <Draggable>
+          <Draggable onStart={handleDragStart} onStop={handleDragStop} disabled={!isDraggableEnabled}>
             <div className="mac-window-2 cursor-grab w-[60%] p-8 rounded-box shadow-custom" onClick={() => handleWindowClick('mac-window-2')}
               style={{
                 zIndex: activeWindow === 'mac-window-2' ? 6 : 0,
