@@ -33,11 +33,19 @@ h2 {
   -webkit-backdrop-filter: blur( 8px ) !important;
 }
 
+.mac-window:hover {
+  scale: 1.02;
+}
+
 .mac-window-2 {
   background-color: rgba(68, 64, 60, 0.50);
   backdrop-filter: blur( 4px );
   -webkit-backdrop-filter: blur( 4px );
   z-index: 5;
+}
+
+.mac-window-2:hover {
+  scale: 1.02;
 }
 
 .mac-window-header {
@@ -101,9 +109,17 @@ h2 {
   -webkit-backdrop-filter: blur( 8px ) !important;
 }
 
+.mockup-code-1:hover {
+  scale: 1.02;
+}
+
 .mockup-code-2 {
   backdrop-filter: blur( 4px ) !important;
   -webkit-backdrop-filter: blur( 4px ) !important;
+}
+
+.mockup-code-2:hover {
+  scale: 1.02;
 }
 
 /* ///////// Blinking Cursor ////////// */

@@ -14,12 +14,12 @@ const Landing = () => {
     };
 
     const handleDragStart = (e) => {
-      if (window.innerWidth < 800) {
+      if (window.innerWidth < 1000) {
         setIsDraggableEnabled(false);
         setHoldTimer(
           setTimeout(() => {
             setIsDraggableEnabled(true);
-          }, 1000)
+          }, 500)
         );
       }
     };
