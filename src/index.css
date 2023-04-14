@@ -49,8 +49,6 @@ body::before {
   width: 90%;
   margin: 0 auto;
   box-shadow: 0 8px 32px 0 rgb(35, 35, 35);
-  backdrop-filter: blur( 4px );
-  -webkit-backdrop-filter: blur( 4px );
   border: 1px solid rgba( 255, 255, 255, 0.18 );
   overflow: hidden;
 }
