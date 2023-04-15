@@ -2,7 +2,6 @@ import { useEffect, useRef, useState } from 'react';
 import "../assets/stylesheets/Projects.css";
 import ProjectDetails from "../components/ProjectDetails.jsx";
 
-
 const Projects = () => {
   const carouselRef = useRef(null);
   const scrollerMasterRef = useRef(null);
@@ -10,7 +9,7 @@ const Projects = () => {
   const [selectedProject, setSelectedProject] = useState(null);
   const [showProjectDetails, setShowProjectDetails] = useState(false);
 
-  // /////// CAROUSEL SCROLL /////////
+  ///////// CAROUSEL SCROLL /////////
   useEffect(() => {
     const carouselElement = carouselRef.current;
     const scrollerMasterElement = scrollerMasterRef.current;
