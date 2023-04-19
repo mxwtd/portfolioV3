@@ -47,6 +47,22 @@ const Projects = () => {
             e.preventDefault();
             carouselRef.current.scrollTo({ left: carouselRef.current.clientWidth * 3, top: 0, behavior: 'smooth' });
         }}>3</a>
+        <a className="btn btn-xs" href="#item4" onClick={(e) => {
+            e.preventDefault();
+            carouselRef.current.scrollTo({ left: carouselRef.current.clientWidth * 4, top: 0, behavior: 'smooth' });
+        }}>4</a>
+        <a className="btn btn-xs" href="#item5" onClick={(e) => {
+            e.preventDefault();
+            carouselRef.current.scrollTo({ left: carouselRef.current.clientWidth * 5, top: 0, behavior: 'smooth' });
+        }}>5</a>
+        <a className="btn btn-xs" href="#item6" onClick={(e) => {
+            e.preventDefault();
+            carouselRef.current.scrollTo({ left: carouselRef.current.clientWidth * 6, top: 0, behavior: 'smooth' });
+        }}>6</a>
+        <a className="btn btn-xs" href="#item7" onClick={(e) => {
+            e.preventDefault();
+            carouselRef.current.scrollTo({ left: carouselRef.current.clientWidth * 7, top: 0, behavior: 'smooth' });
+        }}>7</a>
         <p>{">"}</p>
       </div>
       {showProjectDetails && (
@@ -122,6 +138,66 @@ const Projects = () => {
                 View
               </span>
               <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1680075752/Tumbuka_showreel_uvw7cm.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted playsInline webkit-playsinline="true" />
+            </div>
+          </div>
+          <div id="item4" className="carousel-item shadow-custom">
+            <div className="indicator">
+              <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Portfolio</span>
+              <span
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleViewClick('Portfolio');
+                }}
+                className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold"
+              >
+                View
+              </span>
+              <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1681895178/Portfolio_showreel_llmd8y.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted playsInline webkit-playsinline="true" />
+            </div>
+          </div>
+          <div id="item5" className="carousel-item shadow-custom">
+            <div className="indicator">
+              <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Country Index</span>
+              <span
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleViewClick('Country_Index');
+                }}
+                className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold"
+              >
+                View
+              </span>
+              <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1681895158/Flags_showreel_xqsa9d.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted playsInline webkit-playsinline="true" />
+            </div>
+          </div>
+          <div id="item6" className="carousel-item shadow-custom">
+            <div className="indicator">
+              <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">Airport Index</span>
+              <span
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleViewClick('Airport_Index');
+                }}
+                className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold"
+              >
+                View
+              </span>
+              <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1681895155/Airport_Index_showreel_mt2fbw.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted playsInline webkit-playsinline="true" />
+            </div>
+          </div>
+          <div id="item7" className="carousel-item shadow-custom">
+            <div className="indicator">
+              <span className="indicator-item indicator-start badge badge-primary ml-14 p-4 text-lg font-bold">QR Code Gen</span>
+              <span
+                onClick={(e) => {
+                  e.preventDefault();
+                  handleViewClick('QR_Code_Gen');
+                }}
+                className="transform hover:scale-110 hover:bg-stone-500 cursor-pointer indicator-item indicator-middle indicator-center badge badge-primary mt-custom p-4 text-lg font-bold"
+              >
+                View
+              </span>
+              <video src="https://res.cloudinary.com/djr22sgp3/video/upload/v1681895154/Qr_Code_Generator_showreel_v4q4t5.mp4" style={{width:"75vw"}} className="rounded-box scale-effect object-cover" autoPlay loop muted playsInline webkit-playsinline="true" />
             </div>
           </div>
       </div>

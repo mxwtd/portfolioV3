@@ -31,6 +31,42 @@ const ProjectDetails = ({ project }) => {
       vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1680464001/Friendify_showreel_hemzxd.mp4",
       site: "https://github.com/mxwtd/friendify",
       github: "https://github.com/mxwtd/friendify"
+    },
+    Portfolio: {
+      title: 'Portfolio',
+      description: 'My personal Portfolio, Showcases work and skills.',
+      content: "This is my personal portfolio, it showcases my work and skills. It was built using React, TailwindCSS, and Vite. I decided to build this portfolio a bit differently, I attempted to mimick Mac & Terminal windows to display information and my projects. The user can drag the windows around like on their own computer. It reflects my design philsophy as a developer, things that are simple, clean, and easy to use.",
+      technologies: "React, Javascript, TailwindCSS, Vite, HTML, CSS, PostCSS, Netlify",
+      vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1681895178/Portfolio_showreel_llmd8y.mp4",
+      site: "https://www.maxwtd.com",
+      github: "https://github.com/mxwtd/portfolioV3"
+    },
+    Country_Index: {
+      title: 'Country Index',
+      description: "A simple country index app that allows you to search for countries and view info.",
+      content: "A simple static Front End App hosted on Github Pages that utilises the REST Countries API to display information about countries. The app allows you to search for countries and view information about them. Each query shows the country's flag, name, population, region, capital, and a currency. This was my first app built using a Rest Api, and it was a great learning experience. This app is responsive and works on all devices.",
+      technologies: "HTML, Javascript, CSS, Rest Countries API, Github Pages, Postman",
+      vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1681895158/Flags_showreel_xqsa9d.mp4",
+      site: "https://mxwtd.github.io/countries_app/",
+      github: "https://github.com/mxwtd/countries_app"
+    },
+    Airport_Index: {
+      title: 'Airport Index',
+      description: "A simple index app that allows you to search for any IATA or City to get Airport info.",
+      content: "A simple static Front End App hosted on Github Pages that utilises a API to display information about Airports. The app allows you to search for Airport Names, Cities or IATAs in order to get more information. Each query shows the Airport's Country, IATA, Name, Size. This was my second time working with APIs, I hope to add more data to the results in the future. This app is responsive and works on all devices.",
+      technologies: "HTML, Javascript, CSS, Flight Radar API, Github Pages, Postman",
+      vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1681895155/Airport_Index_showreel_mt2fbw.mp4",
+      site: "https://mxwtd.github.io/Airport-Index/",
+      github: "https://github.com/mxwtd/Airport-Index"
+    },
+    QR_Code_Gen: {
+      title: 'QR Code Gen',
+      description: "A simple app that generates QR Codes.",
+      content: "A simple static Front End App hosted on Github Pages that allows you to generate QR Codes. The app allows you to enter a URL and generate a QR Code for it. You can generate multiple sizes and pick your own colours, then finally you can download your designed QR Code. This was my first app built using a QR Code Generator API, and it was a great learning experience. This app is responsive and works on all devices.",
+      technologies: "HTML, Javascript, CSS, Flight Radar API, Github Pages, Postman",
+      vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1681895154/Qr_Code_Generator_showreel_v4q4t5.mp4",
+      site: "https://mxwtd.github.io/QRGenerator/",
+      github: "https://github.com/mxwtd/QRGenerator"
     }
   };
 
