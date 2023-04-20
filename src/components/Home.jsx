@@ -44,7 +44,7 @@ const Landing = () => {
               }}>
               <div className="mockup-code bg-orange-700/50 w-custom text-primary-content cursor-grab select-none mockup-code-2 shadow-custom">
                 <div className="avatar flex justify-center items-center">
-                  <div className="avatar-div w-custom rounded-full bg-stone-200/75">
+                  <div className="avatar-div w-[80%] rounded-full bg-stone-200/75">
                     <img src="https://res.cloudinary.com/djr22sgp3/image/upload/v1680188751/4a996039caa33fd3569b0f2ef7010e1e-sticker_uiiyam.png" className="mt-2 scale-95"/>
                   </div>
                 </div>

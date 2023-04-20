@@ -23,6 +23,7 @@ module.exports = {
     },
     maxWidth: {
       'custom': '40vw',
+      'custom2': '10vw',
     },
     boxShadow: {
       'custom': '0px 10px 15px -3px rgba(0, 0, 0, 0.3)',
