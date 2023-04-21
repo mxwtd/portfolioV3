@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+import { useRef, useState } from 'react';
 import "../assets/stylesheets/Projects.css";
 import ProjectDetails from "../components/ProjectDetails.jsx";
 
