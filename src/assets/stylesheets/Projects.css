@@ -98,10 +98,23 @@
   display: none;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 568px) {
 
   .container-projects {
     max-width: 90%;
+  }
+
+  .kbd, .separator-line {
+    display: none;
+  }
+
+  .scroll-down {
+    margin-left: -5rem;
+  }
+
+  .scroll-indicator {
+    font-size: 0.7rem;
+    margin-left: -12%;
   }
 
   .carousel {
@@ -113,14 +126,14 @@
   }
 
   .carousel-intro-div {
-    display: none;
-  }
-
-  .scroll-indicator, .scroller-wheel {
-    display: none !important;
+    max-width: 75%;
   }
 
   .mac-window-header-title-projects {
     font-size: 0.8rem;
+  }
+
+  .nav-btn-projects {
+    font-size: 0.6rem;
   }
 }

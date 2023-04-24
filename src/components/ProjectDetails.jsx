@@ -18,7 +18,7 @@ const ProjectDetails = ({ project }) => {
       title: 'Tumbuka',
       description: 'An E-commerce app for a small coffee roastery.',
       content: "Tumbuka is an e-commerce app for a small coffee roastery based in Southern France. The app allows users to browse the roastery's products, add them to their cart, and place orders. The app also features a dashboard that allows the roastery to manage their products and orders. The website ended up revoltionizing the roastery's business, allowing them to access a whole new market of users online.",
-      technologies: "Wix, HTML, CSS, Wix Code, Wix Stores, Wix/Stripe Payments, Wix Data, Google Analytics",
+      technologies: "Wix, HTML, CSS, Wix Code (Velo), Wix Stores, Wix/Stripe Payments, Wix Data, Google Analytics",
       vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1680075752/Tumbuka_showreel_uvw7cm.mp4",
       site: "https://www.tumbuka-cafes.com/",
       github: "https://www.tumbuka-cafes.com/"
@@ -31,6 +31,15 @@ const ProjectDetails = ({ project }) => {
       vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1680464001/Friendify_showreel_hemzxd.mp4",
       site: "https://github.com/mxwtd/friendify",
       github: "https://github.com/mxwtd/friendify"
+    },
+    AltaAi: {
+      title: 'Alta.ai',
+      description: 'A code debugger that explains code line-by-line.',
+      content: "Alta.ai was a simple static app, built with React and the Open Ai API, which allows users to copy/paste code into a search, then they receive a detailed explanation line-by-line of what the code does in plain english. The App was built with the text-davinci-003 model, which now isn't as effective at translating code than the GPT 3 & 4 models. In the future, I will adapt Alta.ai into a fullstack application.",
+      technologies: "React, Javascript, HTML, CSS, Open AI API (TEXT-DAVINCI-003), Vite",
+      vid: "https://res.cloudinary.com/djr22sgp3/video/upload/v1682352612/Alta.ai_showreel_wvz4sx.mp4",
+      site: "https://github.com/mxwtd/altaV3",
+      github: "https://github.com/mxwtd/altaV3"
     },
     Portfolio: {
       title: 'Portfolio',
