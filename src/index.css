@@ -73,11 +73,3 @@ body::before {
   }
 
 }
-
-@media screen and (min-height: 1400px) {
-
-  body {
-    height: 100vh;
-  }
-
-}
