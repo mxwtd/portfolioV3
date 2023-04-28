@@ -98,6 +98,10 @@
   display: none;
 }
 
+/* //////////////////////////////////
+  ///////// MEDIA QUERIES /////////
+////////////////////////////////// */
+
 @media screen and (max-width: 568px) {
 
   .container-projects {
